@@ -6,6 +6,7 @@ public class MainEsercizio1 {
 		// TODO Auto-generated method stub
 		System.out.println("daje");
 		System.out.println("prova");
+		System.out.println("prova");
 
 	}
 
