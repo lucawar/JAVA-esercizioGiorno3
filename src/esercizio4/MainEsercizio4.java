@@ -8,11 +8,12 @@ public class MainEsercizio4 {
 
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("inserisci un numero: ");
+		System.out.println("inserisci un numero da cui far partire un countdown:");
 		int numero = input.nextInt();
 
+		System.out.println(" ");
+
 //CICLO FOR IN NEGATIVO PER STAMPARE I NUMERI AL CONTRARIO
-		System.out.println("Conto alla rovescia: ");
 		for (int i = numero; i >= 0; i--) {
 			System.out.println(i);
 
@@ -25,6 +26,8 @@ public class MainEsercizio4 {
 				e.printStackTrace();
 			}
 		}
+
+		System.out.println("AUGURI!");
 
 		input.close();
 

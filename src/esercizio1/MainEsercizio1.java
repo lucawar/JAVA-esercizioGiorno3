@@ -1,35 +1,39 @@
 package esercizio1;
 
+import java.util.Scanner;
+
 public class MainEsercizio1 {
 
 	public static void main(String[] args) {
-//VARIABILI STRINGA
-		String input = "FORZA ROMA!";
-		String input2 = "FORZAROMA!";
 
-		boolean lengthStr = StringaPariDispari(input);
-		boolean lengthStr2 = StringaPariDispari(input2);
+		Scanner input = new Scanner(System.in);
 
-		System.out.println("La stringa ha una lunghezza pari?");
-		System.out.println(lengthStr);
-		System.out.println("La stringa ha una lunghezza pari?");
-		System.out.println(lengthStr2);
+//INPUT SCANNER STRINGA
+		System.out.println("Inserisci una parola:");
+		String parola = input.nextLine();
 
-//VARIABILI ANNO
-		int anno = 1927;
-		int anno2 = 2020;
+		boolean parolaLength = stringaPariDispari(parola);
+
+		System.out.println(parola.toUpperCase() + " " + "ha una lunghezza pari ? ");
+		System.out.println(parolaLength);
+
+		System.out.println(" ");
+
+//INPUT SCANNER ANNO BISESTILE	
+
+		System.out.println("Iserisci un anno:");
+		int anno = input.nextInt();
 
 		boolean annoBis = annoBisestile(anno);
-		boolean annoBis2 = annoBisestile(anno2);
-
-		System.out.println("L'anno " + anno + " è bisestile? ");
+		System.out.println("L'anno " + anno + " è bisestile ?");
 		System.out.println(annoBis);
-		System.out.println("L'anno " + anno2 + " è bisestile? ");
-		System.out.println(annoBis2);
+
+		input.close();
+
 	}
 
 //METODO PER VERIFICARE SE LA STRINGA INSERITA è PARI O DISPARI
-	public static boolean StringaPariDispari(String str) {
+	public static boolean stringaPariDispari(String str) {
 		int length = str.length();
 
 		if (length % 2 == 0) {
