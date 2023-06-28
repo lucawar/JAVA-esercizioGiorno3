@@ -11,9 +11,9 @@ public class MainEsercizio1 {
 
 //VARIABILI ANNO
 		int anno = 1927;
-		boolean isLeapYear = annoBisestile(anno);
-		System.out.println("L'anno " + anno + " è bisestile? " + isLeapYear);
-		System.out.println(isLeapYear);
+		boolean annoBis = annoBisestile(anno);
+		System.out.println("L'anno " + anno + " è bisestile? " + annoBis);
+		System.out.println(annoBis);
 	}
 
 //METODO PER VERIFICARE SE LA STRINGA INSERITA è PARA O DISPARA
