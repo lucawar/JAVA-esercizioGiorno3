@@ -28,7 +28,7 @@ public class MainEsercizio1 {
 		System.out.println(annoBis2);
 	}
 
-//METODO PER VERIFICARE SE LA STRINGA INSERITA è PARA O DISPARA
+//METODO PER VERIFICARE SE LA STRINGA INSERITA è PARI O DISPARI
 	public static boolean StringaPariDispari(String str) {
 		int length = str.length();
 
