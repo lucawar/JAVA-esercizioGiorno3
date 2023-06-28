@@ -11,6 +11,7 @@ public class MainEsercizio2 {
 		System.out.println("Inserisci un numero tra 0 e 3: ");
 		int numero = input.nextInt();
 
+//COSTRUTTO SWITCH PER VERIFICARE I NUMERI INSERITI
 		switch (numero) {
 		case 0:
 			System.out.println("Zero");

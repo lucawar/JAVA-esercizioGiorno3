@@ -20,7 +20,7 @@ public class MainEsercizio3 {
 				System.out.println("Programma terminato.");
 				break;
 			}
-//METODO "StringBuilder" + "append" PER SUDDIVIDERE LE PAROLE CON UNA ","
+//METODO "StringBuilder" + "append" PER APPENDERE LA ","
 			StringBuilder output = new StringBuilder();
 			for (int i = 0; i < inputString.length(); i++) {
 				output.append(inputString.charAt(i));
@@ -31,7 +31,6 @@ public class MainEsercizio3 {
 
 			System.out.println("Stringa suddivisa: " + output.toString());
 		}
-
 		input.close();
 
 	}
